@@ -15,5 +15,5 @@ jobs:
   action-owner:
     runs-on: ubuntu-latest
     steps:
-    -name: Get the actor of the action
-    run: echo "The author of the action is ${{github.actor}}"
+    - name: Get the actor of the action
+      run: echo "The author of the action is ${{github.actor}}"
