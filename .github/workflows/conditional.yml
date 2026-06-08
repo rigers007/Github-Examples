@@ -12,3 +12,8 @@ jobs:
     steps:
       - name: "Goodbye Moon"
         run:  echo "Goodbye Moon!"
+  action-owner:
+    runs-on: ubuntu-latest
+    steps:
+    -name: Get the actor of the action
+    run: echo "The author of the action is ${{github.actor}}"
